@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <script src="https://unpkg.com/jspsych/jspsych.js"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-html-button-response"></script>
+  <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response"></script>
+  <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
+  <link rel="stylesheet" href="https://unpkg.com/jspsych/css/jspsych.css">
+</head>
+<body></body>
+<script>
+  const jsPsych = initJsPsych();
+
+  const subject_id = jsPsych.randomization.randomID(10);
+  const filename = `${subject_id}.csv`;
+            
+  const instructions = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: `<p>When you click the button below, the data from this experiment will be sent to the OSF using DataPipe.</p>`,
+    choices: ['Continue']
+  }
+
+  const save_data = {
+    type: jsPsychPipe,
+    action: "save",
+    experiment_id: "wlpBqN0leviC",
+    filename: filename,
+    data_string: ()=>jsPsych.data.get().csv()
+  };
+
+  const wrap_up = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: `<p>Done! You can view the data files collected by this experiment at <a target="_blank" href="https://osf.io/zt3y5/">https://osf.io/zt3y5/</a></p>`,
+    choices: "NO_KEYS",
+  }
+
+  jsPsych.run([instructions, save_data, wrap_up])
+</script>
