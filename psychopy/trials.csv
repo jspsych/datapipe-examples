@@ -1,0 +1,10 @@
+﻿word,color,congruent,correctAnswer
+red,red,1,r
+red,green,0,g
+red,blue,0,b
+green,red,0,r
+green,green,1,g
+green,blue,0,b
+blue,red,0,r
+blue,green,0,g
+blue,blue,1,b
