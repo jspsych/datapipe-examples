@@ -4,6 +4,6 @@ This repository contains several examples of using DataPipe ([https://pipe.jspsy
 
 ### Live Demos
 
-1. jsPsych ([demo](https://jspsych.github.io/datapipe-examples/jspsych); [data](https://osf.io/zt3y5/))
-2. PsychoPy, online mode ([demo](https://jspsych.github.io/datapipe-examples/psychopy); [data](https://osf.io/w6yd4/))
-3. lab.js ([demo](https://jspsych.github.io/datapipe-examples/labjs); [data](https://osf.io/yrjzg/))
+1. jsPsych ([readme](https://github.com/jspsych/datapipe-examples/blob/main/jspsych/README.md); [demo](https://jspsych.github.io/datapipe-examples/jspsych); [data](https://osf.io/zt3y5/))
+2. PsychoPy, online mode ([readme](https://github.com/jspsych/datapipe-examples/blob/main/psychopy/README.md); [demo](https://jspsych.github.io/datapipe-examples/psychopy); [data](https://osf.io/w6yd4/))
+3. lab.js ([readme](https://github.com/jspsych/datapipe-examples/blob/main/labjs/README.md); [demo](https://jspsych.github.io/datapipe-examples/labjs); [data](https://osf.io/yrjzg/))
